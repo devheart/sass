@@ -1,0 +1,16 @@
+@import "variables";
+
+// all bootstrap components
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// all dh components
+@import "../../../src/flex";
+
+// theme components
+@import "mixins";
+@import "components/fonts";
+@import "components/type";
+
+@import "components/header";
+@import "components/main";
+@import "components/footer";

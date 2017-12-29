@@ -1,0 +1,29 @@
+@import "../../../src/variables";
+@import "bootstrap-variables";
+
+// layout
+$dh-header-bg: #fff !default;
+$dh-header-border-bottom-width: 2px !default;
+$dh-header-border-bottom-color: darken($dh-header-bg, 15) !default;
+$dh-header-border-bottom: $dh-header-border-bottom-width solid $dh-header-border-bottom-color  !default;
+
+$dh-main-bg: #fff !default;
+$dh-footer-bg: $body-bg !default;
+
+// nav
+$dh-nav-font-size: $font-size-base !default;
+$dh-nav-font-family: $headings-font-family !default;
+
+$dh-topnav-separator-border: 1px solid $dh-header-border-bottom-color !default;
+$dh-topnav-breakpoint-visible: lg !default;
+$dh-topnav-breakpoint-hidden: md !default;
+$dh-topnav-link-color: $link-color !default;
+$dh-topnav-link-bgcolor: $dh-header-bg !default;
+
+$dh-botnav-link-color: $link-color !default;
+$dh-botnav-link-border-color: darken($dh-footer-bg, 15) !default;
+$dh-botnav-link-bgcolor: $dh-footer-bg !default;
+
+// type
+$dh-font-size-small: 16px !default;
+$dh-font-size-large: 18px !default;

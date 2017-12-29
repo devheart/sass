@@ -1,0 +1,26 @@
+@import "../variables";
+@import "../mixins";
+
+#dh-site-footer {
+  background: $dh-footer-bg;
+}
+
+#dh-botnav {
+  font-size: $dh-nav-font-size;
+  font-family: $dh-nav-font-family;
+
+  @include media-breakpoint-only(xs) {
+    margin-left: -($grid-gutter-width/2);
+    margin-right: -($grid-gutter-width/2);
+  }
+}
+
+.dh-botnav-link {
+  @include dh-block-link((
+    padding: $spacer,
+    color: $dh-botnav-link-color,
+    bgc: $dh-botnav-link-bgcolor,
+    border: $dh-botnav-link-border-color
+  ));
+}
+
