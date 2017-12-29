@@ -1,8 +1,8 @@
 # Devheart CSS
 > Simple, JavaScript-less front-end framework based on Bootstrap.
 
-# Installation
+## Installation
 [todo]
 
-# Usage
+## Usage
 [todo]
