@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@mixin dh-breakpoint-helper($breakpoints) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 9999;
+
+  @each $name, $size in $breakpoints {
+    @include media-breakpoint-only($name) {
+      content: "#{to_upper_case($name)} > #{$size}";
+    };
+  }
+}
