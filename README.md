@@ -2,7 +2,8 @@
 > Simple, JavaScript-less front-end framework based on Bootstrap.
 
 ## Installation
-[todo]
+1. Clone/download repo
+2. `npm install`
 
 ## Usage
 [todo]
