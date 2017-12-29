@@ -12,7 +12,7 @@
         {% endif %}
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
         <link rel="shortcut icon" type="image/x-icon" href="{{site.url}}/favicon.ico">
-        <title>{% if page.url == '/' %} {{site.custom_settings.name}} - {{site.custom_settings.description}}{% else %}{{page.title}}{% endif %}</title>
+        <title>{% if page.url == '/' %} {{site.custom_settings.name}} - {{site.custom_settings.description}}{% else %}{{page.title}} - {{site.custom_settings.name}}{% endif %}</title>
 
         {% if site.custom_settings.is_development %}
         <link rel="stylesheet" type="text/css" href="{{'/assets/css/styles.min.css' | prepend: site.url}}">
