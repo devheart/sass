@@ -1,0 +1,4 @@
+@mixin dh-responsive-list($column-width: 200px, $column-gap: 100px) {
+  column-width: $column-width;
+  column-gap: $column-gap;
+}
