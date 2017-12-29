@@ -1,0 +1,38 @@
+@mixin dh-toggle() {
+  .dh-content {
+    display: none;
+  }
+
+  .dh-toggle {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .dh-toggle:checked ~ .dh-content,
+  .dh-label {
+    display: block;
+  }
+}
+
+.dh-accordion {
+  @include dh-toggle();
+
+  .dh-section {
+    border: 1px solid #ddd;
+  }
+
+  .dh-label {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em;
+    margin: 0;
+
+    &:hover {
+      background-color: darken($body-bg, 5);
+    }
+  }
+
+  .dh-content {
+    padding: 1em;
+  }
+}

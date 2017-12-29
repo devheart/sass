@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 #dh-site-header {
   background: $dh-header-bg;
   border-bottom: $dh-header-border-bottom;
