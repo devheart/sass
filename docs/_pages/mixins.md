@@ -2,7 +2,7 @@
 layout: page
 title: Mixins
 permalink: /mixins/
-custom_menu_order: 2
+custom_menu_order: 1
 ---
 
 [mixins]
