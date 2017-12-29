@@ -1,4 +1,5 @@
-@import "../mixins";
+@import "../mixins/flex";
+@import "../mixins/border";
 @import "../variables";
 
 @mixin dh-block($props) {
