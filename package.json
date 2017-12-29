@@ -1,0 +1,11 @@
+{
+  "name": "devheart-css",
+  "version": "0.1.0",
+  "description": "Simple, JavaScript-less front-end framework based on Bootstrap.",
+  "author": "Viktor Persson",
+  "license": "MIT",
+  "repository": "vikpe/devheart-css",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
