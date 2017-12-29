@@ -4,4 +4,4 @@ title: Accordion
 permalink: /components/accordion/
 ---
 
-{% include examples/accordion.md %}
+{% include code_example.md lang="html" file="accordion.md" %}

@@ -27,6 +27,7 @@ exclude:
 # Conversion
 markdown: kramdown
 incremental: false
+highlighter: rouge
 
 # Outputting
 permalink: pretty
