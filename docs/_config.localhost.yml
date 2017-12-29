@@ -1,6 +1,6 @@
 url: http://localhost:3000
 
-incremental: true
+incremental: false
 
 custom_settings:
   is_development: true
