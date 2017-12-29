@@ -43,5 +43,5 @@ custom_settings:
   description: Simple CSS framework based on Bootstrap/Flexbox.
   repo_url: https://github.com/vikpe/devheart-css
   is_development: false
-  is_published: true
+  is_published: false
   google_analytics_tracking_code: false
