@@ -4,4 +4,4 @@ title: Accordion
 permalink: /components/accordion/
 ---
 
-[acc example]
+{% include examples/accordion.md %}

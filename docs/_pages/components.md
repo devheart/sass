@@ -5,4 +5,4 @@ permalink: /components/
 custom_menu_order: 1
 ---
 
-[components]
+* <a href="{{ '/components/accordion' | prepend: site.url}}">Accordion</a>
