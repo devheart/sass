@@ -1,7 +1,7 @@
 {
   "name": "devheart-css",
   "version": "0.1.0",
-  "description": "Simple, JavaScript-less front-end framework based on Bootstrap.",
+  "description": "Simple CSS framework based on Bootstrap/Flexbox.",
   "author": "Viktor Persson",
   "license": "MIT",
   "repository": "vikpe/devheart-css",

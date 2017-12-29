@@ -7,9 +7,7 @@ permalink: /
 
 <h1>Devheart CSS</h1>
 
-<p class="lead">Build responsive, mobile-first projects on the web.</p>
-
-<p>[img]</p>
+<p class="lead">{{site.custom_settings.description}}</p>
 
 <hr class="my-2">
 

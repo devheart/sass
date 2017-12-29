@@ -40,7 +40,7 @@ kramdown:
 # Custom settings
 custom_settings:
   name: Devheart CSS
-  description: Simple, JavaScript-less front-end framework based on Bootstrap.
+  description: Simple CSS framework based on Bootstrap/Flexbox.
   repo_url: https://github.com/vikpe/devheart-css
   is_development: false
   is_published: true

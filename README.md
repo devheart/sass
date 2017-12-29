@@ -1,5 +1,5 @@
 # Devheart CSS
-> Simple, JavaScript-less front-end framework based on Bootstrap.
+> Simple CSS framework based on Bootstrap/Flexbox.
 
 ## Installation
 1. Clone/download repo
