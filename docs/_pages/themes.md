@@ -3,9 +3,8 @@ layout: page
 title: Themes
 permalink: /themes/
 custom_menu_order: 4
+custom_description: Various styles of Devheart CSS.
 ---
-
-<p class="lead">This site is using the default theme.</p>
 
 <hr>
 

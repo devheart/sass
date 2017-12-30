@@ -3,9 +3,8 @@ layout: page
 title: Mixins
 permalink: /mixins/
 custom_menu_order: 1
+custom_description: Practical, highly modular mixins.
 ---
-
-<p class="lead">Practical, highly modular mixins.</p>
 
 * Accordion
 * Blocks

@@ -10,24 +10,14 @@ permalink: /
 
 <div class="row mx-0">
 
-    <div class="col-12 col-xl-6 p-2 dh-responsive-border">
-        <h2>Mixins</h2>
-        Lorem ipsum dolor sit amet.
-    </div>
+{% assign pages = site.pages | where_exp:"p", "p.custom_menu_order > 0" | sort:"custom_menu_order" %}
+{% for p in pages %}
 
     <div class="col-12 col-xl-6 p-2 dh-responsive-border">
-        <h2>Utilities</h2>
-        Lorem ipsum dolor sit amet.
+        <h2>{{p.title}}</h2>
+        {{p.custom_description}}
     </div>
 
-    <div class="col-12 col-xl-6 p-2 dh-responsive-border">
-        <h2>Components</h2>
-        Lorem ipsum dolor sit amet.
-    </div>
-
-    <div class="col-12 col-xl-6 p-2 dh-responsive-border">
-        <h2>Themes</h2>
-        Lorem ipsum dolor sit amet.
-    </div>
+{% endfor %}
 
 </div>
