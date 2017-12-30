@@ -12,13 +12,10 @@ custom_description: Various handy utilities.
 <p>Display/hide elements by breakpoint.</p>
 
 <p>
-    <strong>Hidden</strong>
+    <strong>Hidden</strong>:
+    <code>.dh-hidden-[xs/sm/md/lg/xl]</code>
 </p>
-
-<code>.dh-hidden-[xs/sm/md/lg/xl]</code>
-
 <p>
-    <strong>Visible</strong>
+    <strong>Visible</strong>:
+    <code>.dh-visible-[xs/sm/md/lg/xl]-[block/flex/inline]</code>
 </p>
-
-<code>.dh-visible-[xs/sm/md/lg/xl]-[block/flex/inline]</code>
