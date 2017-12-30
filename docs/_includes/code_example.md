@@ -10,6 +10,6 @@
     <strong>Code</strong>
 </p>
 
-```{{include.lang}}
+{% highlight html %}
 {% include examples/{{include.file}} %}
-```
+{% endhighlight %}
