@@ -6,23 +6,35 @@
   @include dh-flex-center-y();
   min-height: $dh-touch-height;
   min-width: $dh-touch-width;
-  $padding: map-get($props, 'padding');
-  $color: map-get($props, 'color');
-  $bgc: map-get($props, 'bgc');
-  $border: map-get($props, 'border');
-  $is-link: map-get($props, 'is-link');
+  $padding: map-get($props, "padding");
+  $color: map-get($props, "color");
+  $bgc: map-get($props, "bgc");
+  $border: map-get($props, "border");
+  $is-link: map-get($props, "is-link");
 
-  @if $padding {padding: $padding;}
-  @if $color {color: $color;}
-  @if $bgc {background-color: $bgc;}
-  @if $border {@include dh-responsive-border($border);}
+  @if $padding {
+    padding: $padding;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $bgc {
+    background-color: $bgc;
+  }
+  @if $border {
+    @include dh-responsive-border($border);
+  }
 
   @if $is-link {
     cursor: pointer;
 
     &:hover {
-      @if $color {color: darken($color, 15);}
-      @if $bgc {background-color: darken($bgc, 5);}
+      @if $color {
+        color: darken($color, 15);
+      }
+      @if $bgc {
+        background-color: darken($bgc, 5);
+      }
       text-decoration: none;
     }
   }

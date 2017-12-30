@@ -10,6 +10,6 @@
   @each $name, $size in $breakpoints {
     @include media-breakpoint-only($name) {
       content: "#{to_upper_case($name)} > #{$size}";
-    };
+    }
   }
 }

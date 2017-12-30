@@ -1,5 +1,7 @@
 @mixin dh-accordion() {
-  .dh-accordion-content {display: none;}
+  .dh-accordion-content {
+    display: none;
+  }
   .dh-accordion-toggle {
     position: absolute;
     opacity: 0;

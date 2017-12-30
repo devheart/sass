@@ -28,7 +28,9 @@
   border-bottom: $dh-header-border-bottom;
   border-right: $dh-topnav-separator-border;
 
-  &:hover {border-bottom-color: $dh-topnav-link-color;}
+  &:hover {
+    border-bottom-color: $dh-topnav-link-color;
+  }
 }
 
 .dh-topnav-logo-link {

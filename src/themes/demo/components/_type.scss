@@ -1,7 +1,11 @@
 // responsive font size
 html {
-  @include media-breakpoint-down(sm) { font-size: $dh-font-size-small; }
-  @include media-breakpoint-up(md) { font-size: $dh-font-size-large; }
+  @include media-breakpoint-down(sm) {
+    font-size: $dh-font-size-small;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $dh-font-size-large;
+  }
 }
 
 hr {

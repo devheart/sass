@@ -1,5 +1,11 @@
 @import "../mixins/flex";
 
-.dh-flex-center {@include dh-flex-center();}
-.dh-flex-center-x {@include dh-flex-center-x();}
-.dh-flex-center-y {@include dh-flex-center-y();}
+.dh-flex-center {
+  @include dh-flex-center();
+}
+.dh-flex-center-x {
+  @include dh-flex-center-x();
+}
+.dh-flex-center-y {
+  @include dh-flex-center-y();
+}
