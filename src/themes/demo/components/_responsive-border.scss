@@ -1,0 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
+.dh-responsive-border {
+  @include dh-responsive-border($hr-border-color);
+}

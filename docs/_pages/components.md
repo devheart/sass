@@ -2,7 +2,7 @@
 layout: page
 title: Components
 permalink: /components/
-custom_menu_order: 2
+custom_menu_order: 3
 ---
 
 <p class="lead">Components using pure CSS (no JavaScript).</p>

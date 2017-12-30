@@ -2,7 +2,7 @@
 layout: page
 title: Utilities
 permalink: /utilities/
-custom_menu_order: 3
+custom_menu_order: 2
 ---
 
 <p class="lead">Various handy utilities.</p>
