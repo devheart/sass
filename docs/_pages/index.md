@@ -6,7 +6,7 @@ permalink: /
 
 
 <h1>Devheart CSS</h1>
-<p class="lead">{{site.custom_settings.description}}</p>
+<p class="lead mb-2">{{site.custom_settings.description}}</p>
 
 <div class="row mx-0">
 
