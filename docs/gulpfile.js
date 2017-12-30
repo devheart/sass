@@ -13,37 +13,40 @@ const imagemin = require('gulp-imagemin');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 
-let gulpSrcOptions = {read: false};
-let gulpCleanOptions = {force: true};
+let gulpSrcOptions = { read: false };
+let gulpCleanOptions = { force: true };
 
 gulp.task('build:styles', function() {
   let cssPostProcessors = [
     flexbugsFixes,
-    autoprefixer({browsers: ['last 5 versions', '> 5%']})
+    autoprefixer({ browsers: ['last 5 versions', '> 5%'] })
   ];
 
-  return gulp.src(paths.src.stylesDir + '*.scss')
-             .pipe(sass({outputStyle: 'compressed'}))
-             .pipe(postcss(cssPostProcessors))
-             .pipe(concat('styles.min.css'))
-             .pipe(gulp.dest(paths.dist.stylesDir))
-             .pipe(gulp.dest(paths.dist.includesDir))
-             .on('error', gutil.log);
+  return gulp
+    .src(paths.src.stylesDir + '*.scss')
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(postcss(cssPostProcessors))
+    .pipe(concat('styles.min.css'))
+    .pipe(gulp.dest(paths.dist.stylesDir))
+    .pipe(gulp.dest(paths.dist.includesDir))
+    .on('error', gutil.log);
 });
 
 // images
 gulp.task('build:images', function() {
   const DEST = paths.dist.imagesDir;
 
-  return gulp.src(paths.src.imageFilesGlob)
-             .pipe(changed(DEST, {hasChanged: changed.compareContents}))
-             .pipe(imagemin())
-             .pipe(gulp.dest(DEST));
+  return gulp
+    .src(paths.src.imageFilesGlob)
+    .pipe(changed(DEST, { hasChanged: changed.compareContents }))
+    .pipe(imagemin())
+    .pipe(gulp.dest(DEST));
 });
 
 gulp.task('clean:images', function() {
-  return gulp.src(paths.dist.imageFilesGlob, gulpSrcOptions)
-             .pipe(clean(gulpCleanOptions));
+  return gulp
+    .src(paths.dist.imageFilesGlob, gulpSrcOptions)
+    .pipe(clean(gulpCleanOptions));
 });
 
 gulp.task('watch', ['build'], function() {
