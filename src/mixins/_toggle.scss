@@ -1,0 +1,13 @@
+@mixin dh-toggle() {
+  .dh-content {
+    display: none;
+  }
+  .dh-toggle {
+    position: absolute;
+    opacity: 0;
+  }
+  .dh-label,
+  .dh-toggle:checked ~ .dh-content {
+    display: block;
+  }
+}
