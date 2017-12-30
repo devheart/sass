@@ -1,0 +1,9 @@
+@import "../mixins/flex";
+@import "../mixins/border";
+@import "../variables";
+
+@mixin dh-sass-extract-props($props) {
+  @each $key, $value in $props {
+    #{$key}: $value !important;
+  }
+}
