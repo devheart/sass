@@ -1,4 +1,4 @@
-@import "mixins/flex";
+@import "../mixins/flex";
 
 .dh-flex-center {@include dh-flex-center();}
 .dh-flex-center-x {@include dh-flex-center-x();}

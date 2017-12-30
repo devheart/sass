@@ -1,0 +1,13 @@
+.dh-hidden-xs {@extend .d-none; @extend .d-sm-block;}
+.dh-hidden-sm {@extend .d-sm-none; @extend .d-md-block}
+.dh-hidden-md {@extend .d-md-none; @extend .d-lg-block}
+.dh-hidden-lg {@extend .d-lg-none; @extend .d-xl-block}
+.dh-hidden-xl {@extend .d-xl-none; }
+
+@each $display-type in (block,flex,inline) {
+  .dh-visible-xs-#{$display-type} {@extend .d-block; @extend .d-sm-none}
+  .dh-visible-sm-#{$display-type} {@extend .d-none; @extend .d-sm-#{$display-type}; @extend .d-md-none}
+  .dh-visible-md-#{$display-type} {@extend .d-none; @extend .d-md-#{$display-type}; @extend .d-lg-none}
+  .dh-visible-lg-#{$display-type} {@extend .d-none; @extend .d-lg-#{$display-type}; @extend .d-xl-none}
+  .dh-visible-xl-#{$display-type} {@extend .d-none; @extend .d-xl-#{$display-type};}
+}
