@@ -6,11 +6,11 @@
   @include dh-flex-center-y();
   min-height: $dh-touch-height;
   min-width: $dh-touch-width;
+
   $padding: map-get($props, "padding");
   $color: map-get($props, "color");
   $bgc: map-get($props, "bgc");
   $border: map-get($props, "border");
-  $is-link: map-get($props, "is-link");
 
   @if $padding {
     padding: $padding;
@@ -25,7 +25,7 @@
     @include dh-responsive-border($border);
   }
 
-  @if $is-link {
+  @if map_has_key($props, "is-link") {
     cursor: pointer;
 
     &:hover {
