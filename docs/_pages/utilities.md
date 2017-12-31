@@ -89,7 +89,7 @@ custom_description: Various handy utilities.
     <tbody>
         <tr>
             <td><code>.dh-visible-xs-*</code></td>
-            <td class="table-success"><strong >visible</strong></td>
+            <td class="table-success"><strong>visible</strong></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
@@ -98,7 +98,7 @@ custom_description: Various handy utilities.
         <tr>
             <td><code>.dh-visible-sm-*</code></td>
             <td><span class="text-muted">hidden</span></td>
-            <td class="table-success"><strong >visible</strong></td>
+            <td class="table-success"><strong>visible</strong></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
@@ -107,7 +107,7 @@ custom_description: Various handy utilities.
             <td><code>.dh-visible-md-*</code></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
-            <td class="table-success"><strong >visible</strong></td>
+            <td class="table-success"><strong>visible</strong></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
         </tr>
@@ -116,7 +116,7 @@ custom_description: Various handy utilities.
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
-            <td class="table-success"><strong >visible</strong></td>
+            <td class="table-success"><strong>visible</strong></td>
             <td><span class="text-muted">hidden</span></td>
         </tr>
         <tr>
@@ -125,7 +125,7 @@ custom_description: Various handy utilities.
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
             <td><span class="text-muted">hidden</span></td>
-            <td class="table-success"><strong >visible</strong></td>
+            <td class="table-success"><strong>visible</strong></td>
         </tr>
     </tbody>
 </table>
@@ -136,63 +136,39 @@ custom_description: Various handy utilities.
     <thead>
         <tr>
             <th></th>
-            <td><strong>xs</strong></td>
-            <td><strong>sm</strong></td>
-            <td><strong>md</strong></td>
-            <td><strong>lg</strong></td>
-            <td><strong>xl</strong></td>
+            <th><code>xs</code></th>
+            <th><code>sm</code></th>
+            <th><code>md</code></th>
+            <th><code>lg</code></th>
+            <th><code>xl</code></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>
-                <code>.dh-visible-*</code>
-            </td>
-            <td>
-                <span class="dh-visible-xs-inline text-success">visible</span>
-                <span class="dh-hidden-xs text-danger">hidden</span>
-            </td>
-            <td>
-                <span class="dh-visible-sm-inline text-success">visible</span>
-                <span class="dh-hidden-sm text-danger">hidden</span>
-            </td>
-            <td>
-                <span class="dh-visible-md-inline text-success">visible</span>
-                <span class="dh-hidden-md text-danger">hidden</span>
-            </td>
-            <td>
-                <span class="dh-visible-lg-inline text-success">visible</span>
-                <span class="dh-hidden-lg text-danger">hidden</span>
-            </td>
-            <td>
-                <span class="dh-visible-xl-inline text-success">visible</span>
-                <span class="dh-hidden-xl text-danger">visible</span>
-            </td>
+            <td><code>.dh-visible-*</code></td>
+            <td class="dh-visible-xs-block table-success"><strong>visible</strong></td>
+            <td class="dh-hidden-xs"><span class="text-danger">hidden</span></td>
+            <td class="dh-visible-sm-block table-success"><strong>visible</strong></td>
+            <td class="dh-hidden-sm"><span class="text-danger">hidden</span></td>
+            <td class="dh-visible-md-block table-success"><strong>visible</strong></td>
+            <td class="dh-hidden-md"><span class="text-danger">hidden</span></td>
+            <td class="dh-visible-lg-block table-success"><strong>visible</strong></td>
+            <td class="dh-hidden-lg"><span class="text-danger">hidden</span></td>
+            <td class="dh-visible-xl-block table-success"><strong>visible</strong></td>
+            <td class="dh-hidden-xl"><span class="text-danger">visible</span></td>
         </tr>
         <tr>
-            <td>
-                <code>.dh-hidden-*</code>
-            </td>
-            <td>
-                <span class="dh-visible-xs-inline text-danger">hidden</span>
-                <span class="dh-hidden-xs text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-sm-inline text-danger">hidden</span>
-                <span class="dh-hidden-sm text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-md-inline text-danger">hidden</span>
-                <span class="dh-hidden-md text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-lg-inline text-danger">hidden</span>
-                <span class="dh-hidden-lg text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-xl-inline text-danger">hidden</span>
-                <span class="dh-hidden-xl text-success">visible</span>
-            </td>
+            <td><code>.dh-hidden-*</code></td>
+            <td class="dh-visible-xs-block table-danger"><strong>hidden</strong></td>
+            <td class="dh-hidden-xs"><span class="text-success">visible</span></td>
+            <td class="dh-visible-sm-block table-danger"><strong>hidden</strong></td>
+            <td class="dh-hidden-sm"><span class="text-success">visible</span></td>
+            <td class="dh-visible-md-block table-danger"><strong>hidden</strong></td>
+            <td class="dh-hidden-md"><span class="text-success">visible</span></td>
+            <td class="dh-visible-lg-block table-danger"><strong>hidden</strong></td>
+            <td class="dh-hidden-lg"><span class="text-success">visible</span></td>
+            <td class="dh-visible-xl-block table-danger"><strong>hidden</strong></td>
+            <td class="dh-hidden-xl"><span class="text-success">visible</span></td>
         </tr>
     </tbody>
 </table>
