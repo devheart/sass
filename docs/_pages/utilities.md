@@ -136,11 +136,11 @@ custom_description: Various handy utilities.
     <thead>
         <tr>
             <th></th>
-            <td><code>xs</code></td>
-            <td><code>sm</code></td>
-            <td><code>md</code></td>
-            <td><code>lg</code></td>
-            <td><code>xl</code></td>
+            <td><strong>xs</strong></td>
+            <td><strong>sm</strong></td>
+            <td><strong>md</strong></td>
+            <td><strong>lg</strong></td>
+            <td><strong>xl</strong></td>
         </tr>
     </thead>
     <tbody>
