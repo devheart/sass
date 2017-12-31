@@ -136,11 +136,11 @@ custom_description: Various handy utilities.
     <thead>
         <tr>
             <th></th>
-            <td><code>xl</code></td>
-            <td><code>lg</code></td>
-            <td><code>md</code></td>
-            <td><code>sm</code></td>
             <td><code>xs</code></td>
+            <td><code>sm</code></td>
+            <td><code>md</code></td>
+            <td><code>lg</code></td>
+            <td><code>xl</code></td>
         </tr>
     </thead>
     <tbody>
@@ -149,24 +149,24 @@ custom_description: Various handy utilities.
                 <code>.dh-visible-*</code>
             </td>
             <td>
-                <span class="dh-visible-xl-inline text-success">visible</span>
-                <span class="dh-hidden-xl text-danger">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-lg-inline text-success">visible</span>
-                <span class="dh-hidden-lg text-danger">hidden</span>
-            </td>
-            <td>
-                <span class="dh-visible-md-inline text-success">visible</span>
-                <span class="dh-hidden-md text-danger">hidden</span>
+                <span class="dh-visible-xs-inline text-success">visible</span>
+                <span class="dh-hidden-xs text-danger">hidden</span>
             </td>
             <td>
                 <span class="dh-visible-sm-inline text-success">visible</span>
                 <span class="dh-hidden-sm text-danger">hidden</span>
             </td>
             <td>
-                <span class="dh-visible-xs-inline text-success">visible</span>
-                <span class="dh-hidden-xs text-danger">hidden</span>
+                <span class="dh-visible-md-inline text-success">visible</span>
+                <span class="dh-hidden-md text-danger">hidden</span>
+            </td>
+            <td>
+                <span class="dh-visible-lg-inline text-success">visible</span>
+                <span class="dh-hidden-lg text-danger">hidden</span>
+            </td>
+            <td>
+                <span class="dh-visible-xl-inline text-success">visible</span>
+                <span class="dh-hidden-xl text-danger">visible</span>
             </td>
         </tr>
         <tr>
@@ -174,24 +174,24 @@ custom_description: Various handy utilities.
                 <code>.dh-hidden-*</code>
             </td>
             <td>
-                <span class="dh-visible-xl-inline text-danger">hidden</span>
-                <span class="dh-hidden-xl text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-lg-inline text-danger">hidden</span>
-                <span class="dh-hidden-lg text-success">visible</span>
-            </td>
-            <td>
-                <span class="dh-visible-md-inline text-danger">hidden</span>
-                <span class="dh-hidden-md text-success">visible</span>
+                <span class="dh-visible-xs-inline text-danger">hidden</span>
+                <span class="dh-hidden-xs text-success">visible</span>
             </td>
             <td>
                 <span class="dh-visible-sm-inline text-danger">hidden</span>
                 <span class="dh-hidden-sm text-success">visible</span>
             </td>
             <td>
-                <span class="dh-visible-xs-inline text-danger">hidden</span>
-                <span class="dh-hidden-xs text-success">visible</span>
+                <span class="dh-visible-md-inline text-danger">hidden</span>
+                <span class="dh-hidden-md text-success">visible</span>
+            </td>
+            <td>
+                <span class="dh-visible-lg-inline text-danger">hidden</span>
+                <span class="dh-hidden-lg text-success">visible</span>
+            </td>
+            <td>
+                <span class="dh-visible-xl-inline text-danger">hidden</span>
+                <span class="dh-hidden-xl text-success">visible</span>
             </td>
         </tr>
     </tbody>
