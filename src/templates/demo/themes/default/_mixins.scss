@@ -1,0 +1,31 @@
+@mixin dh-touch-size($width: $dh-touch-width, $height: $dh-touch-height) {
+  min-height: $dh-touch-height;
+  min-width: $dh-touch-width;
+}
+
+@mixin dh-block($props) {
+  @include dh-flex-center-y();
+  @include dh-touch-size();
+  @include dh-sass-extract-props($props, (padding, color, bgc, border));
+
+  @if map_has_key($props, "is-link") {
+    cursor: pointer;
+
+    $color: dh-get($props, color);
+    $bgc: dh-get($props, bgc);
+
+    &:hover {
+      @if $color {
+        color: darken($color, 15);
+      }
+      @if $bgc {
+        background-color: darken($bgc, 5);
+      }
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin dh-block-link($props) {
+  @include dh-block(map-merge($props, (is-link: true)));
+}

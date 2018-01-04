@@ -1,0 +1,3 @@
+.dh-responsive-shadow {
+  @include dh-responsive-shadow($hr-border-color, 1px);
+}

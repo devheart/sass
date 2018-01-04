@@ -1,9 +1,7 @@
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 @mixin dh-breakpoint-helper($breakpoints) {
   position: absolute;
-  right: 0;
-  bottom: 0;
   display: block;
   z-index: 9999;
 

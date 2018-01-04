@@ -13,7 +13,7 @@ permalink: /
 {% assign pages = site.pages | where_exp:"p", "p.custom_menu_order > 0" | sort:"custom_menu_order" %}
 {% for p in pages %}
 
-    <a href="{{p.permalink | prepend: site.url}}" class="col-12 col-xl-6 p-2 dh-responsive-border">
+    <a href="{{p.permalink | prepend: site.url}}" class="col-12 col-xl-6 p-2 dh-responsive-shadow">
         <h2>{{p.title}}</h2>
         {{p.custom_description}}
     </a>

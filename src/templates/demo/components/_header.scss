@@ -1,6 +1,3 @@
-@import "../variables";
-@import "../mixins";
-
 #dh-site-header {
   background: $dh-header-bg;
   border-bottom: $dh-header-border-bottom;
@@ -17,10 +14,11 @@
 }
 
 .dh-topnav-link {
-  @include dh-block-link((
+  @include dh-block((
     padding: 0 $spacer,
     color: $dh-topnav-link-color,
-    bgc: $dh-topnav-link-bgcolor
+    bgc: $dh-topnav-link-bgcolor,
+    is-link: true
   ));
 
   border-bottom: $dh-header-border-bottom;

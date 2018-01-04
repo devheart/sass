@@ -1,4 +1,4 @@
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../../node_modules/bootstrap/scss/mixins/breakpoints";
 
 @mixin dh-hidden($breakpoints) {
   @each $name, $size in $breakpoints {
@@ -12,7 +12,7 @@
 
 @mixin dh-visible($breakpoints) {
   @each $name, $size in $breakpoints {
-    @each $display-type in (block,flex,inline) {
+    @each $display-type in (block, flex, inline) {
       .dh-visible-#{$name}-#{$display-type} {
         display: none;
       }

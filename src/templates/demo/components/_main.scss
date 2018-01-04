@@ -1,6 +1,3 @@
-@import "../mixins";
-@import "../variables";
-
 #dh-site-main {
   background: $dh-main-bg;
   border-bottom: 1px solid darken($dh-main-bg, 15);
@@ -14,10 +11,11 @@
 }
 
 .dh-block-link {
-  @include dh-block-link((
+  @include dh-block((
     padding: $spacer,
     color: $link-color,
     border: $hr-border-color,
-    bgc: $dh-main-bg
+    bgc: $dh-main-bg,
+    is-link: true
   ));
 }

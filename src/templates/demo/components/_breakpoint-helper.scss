@@ -1,8 +1,8 @@
-@import "../mixins";
-@import "../variables";
-
 #dh-breakpoint-helper::after {
   @include dh-breakpoint-helper($grid-breakpoints);
+
+  right: 0;
+  bottom: 0;
 
   background-color: black;
   color: white;

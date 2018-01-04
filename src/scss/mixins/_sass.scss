@@ -1,5 +1,4 @@
 @import "../functions";
-@import "../variables";
 
 @mixin dh-sass-extract-prop($map, $key) {
   @if map_has_key($map, $key) {

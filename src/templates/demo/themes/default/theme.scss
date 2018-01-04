@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+
+@import "../../../../scss/all";
+@import "../../../../scss/bootstrap/all";
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
+
+// theme components
+@import "../../components/type";
+
+@import "../../components/accordion";
+@import "../../components/breakpoint-helper";
+@import "../../components/responsive-shadow";
+
+@import "../../components/header";
+@import "../../components/main";
+@import "../../components/footer";
