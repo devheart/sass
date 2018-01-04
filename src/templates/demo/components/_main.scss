@@ -1,21 +1,20 @@
 #dh-site-main {
   background: $dh-main-bg;
   border-bottom: 1px solid darken($dh-main-bg, 15);
-}
 
-.dh-block {
-  @include dh-block((
-    padding: $spacer,
-    border: $dh-botnav-link-border-color
-  ));
-}
+  .dh-block {
+    @include dh-block((
+      padding: $spacer,
+    ));
+  }
 
-.dh-block-link {
-  @include dh-block((
-    padding: $spacer,
-    color: $link-color,
-    border: $hr-border-color,
-    bgc: $dh-main-bg,
-    is-link: true
-  ));
+  .dh-block-link {
+    @include dh-block-link((
+      padding: $spacer,
+      color: $link-color,
+      bgc: $dh-main-bg
+    ));
+
+    @include dh-grid-shadow($hr-border-color, 1px);
+  }
 }

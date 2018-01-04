@@ -13,7 +13,6 @@
   @include dh-block-link((
     padding: $spacer,
     color: $dh-botnav-link-color,
-    bgc: $dh-botnav-link-bgcolor,
-    border: $dh-botnav-link-border-color
+    bgc: $dh-botnav-link-bgcolor
   ));
 }

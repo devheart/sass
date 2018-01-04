@@ -4,28 +4,26 @@
 }
 
 @mixin dh-block($props) {
-  @include dh-flex-center-y();
   @include dh-touch-size();
-  @include dh-sass-extract-props($props, (padding, color, bgc, border));
-
-  @if map_has_key($props, "is-link") {
-    cursor: pointer;
-
-    $color: dh-get($props, color);
-    $bgc: dh-get($props, bgc);
-
-    &:hover {
-      @if $color {
-        color: darken($color, 15);
-      }
-      @if $bgc {
-        background-color: darken($bgc, 5);
-      }
-      text-decoration: none;
-    }
-  }
+  @include dh-flex-center-y();
+  @include dh-sass-extract-props($props, (padding, color, bgc));
 }
 
 @mixin dh-block-link($props) {
-  @include dh-block(map-merge($props, (is-link: true)));
+  @include dh-block($props);
+  cursor: pointer;
+
+  $color: dh-get($props, color);
+  $bgc: dh-get($props, bgc);
+
+  &:hover {
+    text-decoration: none;
+
+    @if $color {
+      color: darken($color, 15);
+    }
+    @if $bgc {
+      background-color: darken($bgc, 5);
+    }
+  }
 }

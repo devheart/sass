@@ -1,4 +1,4 @@
-@mixin dh-responsive-shadow($color, $width) {
+@mixin dh-grid-shadow($color, $width) {
   box-shadow: $width 0 0 0 $color, 0 $width 0 0 $color, $width $width 0 0 $color,
     $width 0 0 0 $color inset, 0 $width 0 0 $color inset;
 }

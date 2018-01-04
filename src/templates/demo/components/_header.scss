@@ -14,11 +14,10 @@
 }
 
 .dh-topnav-link {
-  @include dh-block((
+  @include dh-block-link((
     padding: 0 $spacer,
     color: $dh-topnav-link-color,
-    bgc: $dh-topnav-link-bgcolor,
-    is-link: true
+    bgc: $dh-topnav-link-bgcolor
   ));
 
   border-bottom: $dh-header-border-bottom;
