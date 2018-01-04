@@ -1,5 +1,5 @@
 {
-  "name": "devheart-css",
+  "name": "@devheart/sass",
   "version": "0.1.0",
   "description": "SASS framework.",
   "author": "Viktor Persson",
