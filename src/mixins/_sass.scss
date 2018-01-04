@@ -1,9 +1,14 @@
-@import "../mixins/flex";
-@import "../mixins/border";
+@import "../functions";
 @import "../variables";
 
-@mixin dh-sass-extract-props($props) {
-  @each $key, $value in $props {
-    #{$key}: $value !important;
+@mixin dh-sass-extract-prop($map, $key) {
+  @if map_has_key($map, $key) {
+    #{dh-get-prop-name($key)}: map_get($map, $key);
+  }
+}
+
+@mixin dh-sass-extract-props($map, $keys: map_keys($map)) {
+  @each $key in $keys {
+    @include dh-sass-extract-prop($map, $key);
   }
 }
