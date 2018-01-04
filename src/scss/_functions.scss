@@ -1,11 +1,7 @@
 @import "variables";
 
 @function dh-default-to($value, $default-value) {
-  @if ($value) {
-    @return $value;
-  } @else {
-    @return $default-value;
-  }
+  @return if($value, $value, $default-value);
 }
 
 @function dh-get($map, $key, $default: null) {
@@ -17,6 +13,5 @@
     bgc: "background-color",
     shadow: "box-shadow"
   );
-
   @return dh-get($abbreviations, $name, $name);
 }
