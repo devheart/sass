@@ -1,10 +1,10 @@
 {
   "name": "devheart-css",
   "version": "0.1.0",
-  "description": "Simple CSS framework based on Bootstrap/Flexbox.",
+  "description": "SASS framework.",
   "author": "Viktor Persson",
   "license": "MIT",
-  "repository": "vikpe/devheart-css",
+  "repository": "devheart/sass",
   "scripts": {
     "prettier": "prettier --write \"src/**/*.scss\""
   },
