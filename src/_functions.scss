@@ -1,11 +1,15 @@
 @import "variables";
 
-@function dh-get($map, $key, $default: null) {
-  @if map_has_key($map, $key) {
-    @return map_get($map, $key);
+@function dh-default-to($value, $default-value) {
+  @if ($value) {
+    @return $value;
   } @else {
-    @return $default;
+    @return $default-value;
   }
+}
+
+@function dh-get($map, $key, $default: null) {
+  @return dh-default-to(map_get($map, $key), $default);
 }
 
 @function dh-get-prop-name($name) {
