@@ -1,5 +1,9 @@
 @import "bootstrap-variables";
 
+// box model
+$dh-touch-height: 64px !default;
+$dh-touch-width: 80px !default;
+
 // layout
 $dh-header-bg: #f7f7f7 !default;
 $dh-header-border-bottom-width: 2px !default;
