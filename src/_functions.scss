@@ -1,0 +1,13 @@
+@import "variables";
+
+@function dh-get($map, $key, $default: null) {
+  @if map_has_key($map, $key) {
+    @return map_get($map, $key);
+  } @else {
+    @return $default;
+  }
+}
+
+@function dh-get-prop-name($name) {
+  @return dh-get($dh-prop-abbreviations, $name, $name);
+}
