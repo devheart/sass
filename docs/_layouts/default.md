@@ -24,7 +24,7 @@
     <body id="top">
 
         {% if site.custom_settings.is_development %}
-            <div id="dh-breakpoint-helper"></div>
+            <div class="dh-breakpoint-helper"></div>
         {% endif %}
 
         {% include header.md %}
