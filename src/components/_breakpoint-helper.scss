@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/mixins/breakpoints";
 
-.dh-breakpoint-helper {
+.dh-breakpoint-helper::after {
   position: absolute;
   display: block;
   z-index: 9999;
