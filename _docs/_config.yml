@@ -1,0 +1,47 @@
+# General
+url: https://devheart.github.io/sass
+encoding: utf-8
+
+# Github
+repository: devheart/sass
+
+# Handling Reading
+safe: true
+include:
+  - _pages
+
+exclude:
+  - node_modules/
+  - src/
+  - .gitignore
+  - bs-config.js
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - gulpfile.paths.js
+  - readme.md
+  - yarn.lock
+
+# Conversion
+markdown: kramdown
+incremental: false
+highlighter: rouge
+
+# Outputting
+permalink: pretty
+timezone: Europe/Stockholm
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Custom settings
+custom_settings:
+  name: devheart sass
+  description: sass framework
+  repo_url: https://github.com/devheart/sass
+  is_development: false
+  is_published: false
+  google_analytics_tracking_code: false
