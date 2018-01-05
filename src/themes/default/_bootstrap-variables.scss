@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/functions";
 
 // Bootstrap overrides
 //
@@ -48,4 +48,4 @@ $hr-border-color: #d7d7d7 !default;
 // Body
 $body-bg: #f7f7f7 !default;
 
-@import "~bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables";

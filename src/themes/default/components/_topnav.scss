@@ -1,9 +1,4 @@
-#dh-site-header {
-  background: $dh-header-bg;
-  border-bottom: $dh-header-border-bottom;
-}
-
-#dh-topnav {
+.dh-topnav {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -$dh-header-border-bottom-width;
@@ -13,18 +8,18 @@
   @include dh-gutterless-only(xs, $grid-gutter-width);
 }
 
-.dh-topnav-link {
+.dh-topnav-item {
   @include dh-block-link((
     padding: 0 $spacer,
-    color: $dh-topnav-link-color,
-    bgc: $dh-topnav-link-bgcolor
+    color: $dh-topnav-item-color,
+    bgc: $dh-topnav-item-bgcolor
   ));
 
   border-bottom: $dh-header-border-bottom;
   border-right: $dh-topnav-separator-border;
 
   &:hover {
-    border-bottom-color: $dh-topnav-link-color;
+    border-bottom-color: $dh-topnav-item-color;
   }
 }
 
@@ -56,7 +51,7 @@
   @include media-breakpoint-down($dh-topnav-breakpoint-hidden) {
     display: none;
 
-    .dh-topnav-link {
+    .dh-topnav-item {
       justify-content: flex-start;
       border-left: $dh-topnav-separator-border;
     }
