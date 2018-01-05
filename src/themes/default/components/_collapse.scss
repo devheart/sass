@@ -1,16 +1,17 @@
 .dh-accordion {
+  border: 1px solid $hr-border-color;
+
   .dh-section {
-    border: 1px solid #ddd;
+    border-bottom: 1px solid $hr-border-color;
   }
 
   .dh-label {
-    cursor: pointer;
-    font-weight: bold;
     padding: 1em;
     margin: 0;
+    font-weight: bold;
 
     &:hover {
-      background-color: darken($body-bg, 5);
+      background-color: darken($body-bg, 3);
     }
   }
 
