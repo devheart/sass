@@ -6,11 +6,9 @@
                 <img src="{{'/assets/img/github.svg' | prepend: site.url}}" /> {{site.custom_settings.name}}
             </a>
 
-            <a href="#" class="dh-topnav-item px-0" id="dh-topnav-toggler">
-                <label for="dh-topnav-toggle-checkbox"></label>
-            </a>
+            <label class="dh-topnav-item dh-label" for="dh-topnav-toggle-checkbox"></label>
 
-            <input type="checkbox" id="dh-topnav-toggle-checkbox">
+            <input type="checkbox" class="dh-toggler" id="dh-topnav-toggle-checkbox">
 
             <div id="dh-topnav-collapse">
                 {% assign pages = site.pages | where_exp:"p",

@@ -6,6 +6,16 @@
   font-family: $dh-nav-font-family;
 
   @include dh-gutterless-only(xs, $grid-gutter-width);
+
+  .dh-label {
+    @include media-breakpoint-up($dh-topnav-breakpoint-visible) {
+      display: none;
+    }
+
+    width: $dh-touch-width;
+    margin: 0;
+    background: url(/assets/img/menu_filled.png) no-repeat center center;
+  }
 }
 
 .dh-topnav-item {
@@ -28,21 +38,6 @@
 
   @include media-breakpoint-down($dh-topnav-breakpoint-hidden) {
     flex-grow: 1;
-  }
-}
-
-#dh-topnav-toggler {
-  @include media-breakpoint-up($dh-topnav-breakpoint-visible) {
-    display: none;
-  }
-
-  > label {
-    display: flex;
-    height: 100%;
-    width: $dh-touch-width;
-    margin: 0;
-    background: url(/assets/img/menu_filled.png) no-repeat center center;
-    cursor: pointer;
   }
 }
 
