@@ -1,1 +1,26 @@
+@import "../mixins/flex";
 
+.dh-topnav {
+  @include dh-flex-center();
+}
+
+/*
+
+<nav class="dh-collapse dh-topnav">
+
+    <a href="#" class="dh-topnav-item">
+        <img src="" />
+    </a>
+
+    <label class="dh-topnav-item dh-label" for="dh-topnav-toggler"></label>
+
+    <input type="checkbox" class="dh-toggler" id="dh-topnav-toggler">
+
+    <div class="dh-content">
+       <a href="#" class="dh-topnav-item">Features</a>
+       <a href="#" class="dh-topnav-item">About</a>
+    </div>
+
+</nav>
+
+*/

@@ -1,8 +1,18 @@
-@import "../mixins/collapse";
-
-.dh-collapse,
-.dh-accordion {
-  @include dh-collapse();
+.dh-collapse {
+  .dh-content {
+    display: none;
+  }
+  .dh-toggler {
+    position: absolute;
+    opacity: 0;
+  }
+  .dh-label {
+    cursor: pointer;
+  }
+  .dh-label,
+  .dh-toggler:checked + .dh-content {
+    display: block;
+  }
 }
 
 /*
@@ -16,7 +26,7 @@
 
 </div>
 
-<div class="dh-accordion">
+<div class="dh-collapse dh-accordion">
 
     <section class="dh-section">
         <input class="dh-toggler" id="section-21" type="radio" name="accordion-1">
