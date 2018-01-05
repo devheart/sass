@@ -1,8 +1,5 @@
 .dh-topnav {
   @include dh-gutterless-only(xs, $grid-gutter-width);
-
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -$dh-header-border-bottom-width;
   font-size: $dh-nav-font-size;
   font-family: $dh-nav-font-family;

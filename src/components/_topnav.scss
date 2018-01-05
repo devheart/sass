@@ -2,6 +2,9 @@
 
 .dh-topnav {
   @include dh-flex-center-y();
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
