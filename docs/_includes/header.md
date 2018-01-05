@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="dh-collapse dh-topnav">
 
-            <a href="{{ '/' | prepend: site.url}}" class="dh-topnav-item dh-topnav-logo-link">
+            <a href="{{ '/' | prepend: site.url}}" class="dh-topnav-item">
                 <img src="{{'/assets/img/github.svg' | prepend: site.url}}" /> {{site.custom_settings.name}}
             </a>
 

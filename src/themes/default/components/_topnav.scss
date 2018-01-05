@@ -1,38 +1,17 @@
 .dh-topnav {
-  @include dh-gutterless-only(xs, $grid-gutter-width);
   margin-bottom: -$dh-header-border-bottom-width;
   font-size: $dh-nav-font-size;
   font-family: $dh-nav-font-family;
 
   .dh-label {
-    width: $dh-touch-width;
-    margin: 0;
     background: url(/assets/img/menu_filled.png) no-repeat center center;
   }
 
-  @include media-breakpoint-down($dh-topnav-breakpoint-hidden) {
-    .dh-content {
-      display: none;
+  @include media-breakpoint-up(sm) {
+    border-left: $dh-topnav-separator-border;
 
-      .dh-topnav-item {
-        border-left: $dh-topnav-separator-border;
-      }
-    }
-
-    .dh-toggler:checked + .dh-content {
-      display: flex !important;
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-
-  @include media-breakpoint-up($dh-topnav-breakpoint-visible) {
-    .dh-label {
-      display: none;
-    }
-
-    .dh-content {
-      display: flex !important;
+    .dh-topnav-item {
+      border-right: $dh-topnav-separator-border;
     }
   }
 }
@@ -43,19 +22,13 @@
     color: $dh-topnav-item-color,
     bgc: $dh-topnav-item-bgcolor
   ));
-
   border-bottom: $dh-header-border-bottom;
-  border-right: $dh-topnav-separator-border;
 
   &:hover {
     border-bottom-color: $dh-topnav-item-color;
   }
-}
 
-.dh-topnav-logo-link {
-  border-left: $dh-topnav-separator-border;
-
-  @include media-breakpoint-down($dh-topnav-breakpoint-hidden) {
-    flex-grow: 1;
+  &:first-child {
+    border-right: $dh-topnav-separator-border;
   }
 }
