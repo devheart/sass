@@ -15,6 +15,6 @@
       bgc: $dh-main-bg
     ));
 
-    @include dh-grid-shadow($hr-border-color, 1px);
+    @include dh-box-shadow($hr-border-color, 1px);
   }
 }

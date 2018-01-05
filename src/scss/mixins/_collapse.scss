@@ -1,13 +1,16 @@
-@mixin dh-toggle() {
+@mixin dh-collapse() {
   .dh-content {
     display: none;
   }
-  .dh-toggle {
+  .dh-toggler {
     position: absolute;
     opacity: 0;
   }
+  .dh-label {
+    cursor: pointer;
+  }
   .dh-label,
-  .dh-toggle:checked ~ .dh-content {
+  .dh-toggler:checked + .dh-content {
     display: block;
   }
 }

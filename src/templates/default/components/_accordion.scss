@@ -1,5 +1,5 @@
 .dh-accordion {
-  @include dh-toggle();
+  @include dh-collapse();
 
   .dh-section {
     border: 1px solid #ddd;

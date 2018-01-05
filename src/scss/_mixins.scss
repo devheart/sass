@@ -1,9 +1,9 @@
 @import "~bootstrap/scss/mixins";
 
-@import "mixins/breakpoint-helper";
+@import "mixins/collapse";
 @import "mixins/display";
 @import "mixins/flex";
+@import "mixins/grid";
 @import "mixins/list";
 @import "mixins/sass";
 @import "mixins/shadow";
-@import "mixins/toggle";

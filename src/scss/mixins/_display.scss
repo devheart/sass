@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/mixins/breakpoints";
 
-@mixin dh-hidden($breakpoints) {
+@mixin dh-hidden($breakpoints: $grid-breakpoints) {
   @each $name, $size in $breakpoints {
     @include media-breakpoint-only($name, $breakpoints) {
       .dh-hidden-#{$name} {
@@ -10,9 +10,15 @@
   }
 }
 
-@mixin dh-visible($breakpoints) {
+@mixin dh-visible($breakpoints: $grid-breakpoints) {
+  $display-types: (
+    block,
+    flex,
+    inline
+  );
+
   @each $name, $size in $breakpoints {
-    @each $display-type in (block, flex, inline) {
+    @each $display-type in $display-types {
       .dh-visible-#{$name}-#{$display-type} {
         display: none;
       }
