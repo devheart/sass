@@ -1,2 +1,2 @@
 # Devheart SASS
-> SASS framework
+> Front-end framework
