@@ -1,6 +1,10 @@
 @import "~bootstrap/scss/mixins/breakpoints";
 
 .dh-breakpoint-helper::after {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
   @each $name, $size in $grid-breakpoints {
     @include media-breakpoint-only($name) {
       content: "#{to_upper_case($name)} > #{$size}";

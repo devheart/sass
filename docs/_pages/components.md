@@ -22,4 +22,12 @@ Switch `type="radio"` to `type="checkbox"` in order to allow multiple sections t
 ## Breakpoint helper
 Displays current breakpoint name and size trigger.
 
-{% include code_example.md file="breakpoint_helper.md" %}
+<div class="dh-breakpoint-helper"></div>
+
+<p><strong>Example</strong></p>
+(see bottom right corner)
+
+<p><strong>Code</strong></p>
+```html
+<div class="dh-breakpoint-helper"></div>
+```
