@@ -39,8 +39,8 @@ kramdown:
 
 # Custom settings
 custom_settings:
-  name: devheart sass
-  description: sass framework
+  name: Devheart SASS
+  description: Front-end framework
   repo_url: https://github.com/devheart/sass
   is_development: false
   is_published: false

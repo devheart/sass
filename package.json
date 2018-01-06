@@ -1,7 +1,7 @@
 {
   "name": "devheart-sass",
   "version": "0.3.0",
-  "description": "SASS framework.",
+  "description": "Front-end framework.",
   "author": "Viktor Persson",
   "license": "MIT",
   "repository": "devheart/sass",
