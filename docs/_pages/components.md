@@ -19,6 +19,13 @@ Switch `type="radio"` to `type="checkbox"` in order to allow multiple sections t
 
 ---
 
+## Topnav
+(see example in header)
+
+{% include code.md file="topnav.md" %}
+
+---
+
 ## Breakpoint helper
 Displays current breakpoint name and size trigger.
 
