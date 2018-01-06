@@ -8,12 +8,30 @@
   }
 
   .dh-label {
+    @include dh-flex-center-y();
     padding: 1em;
+    opacity: 0.5;
     font-weight: bold;
 
-    &:hover {
-      background-color: darken($body-bg, 3);
+    &::before {
+      display: inline-flex;
+      width: 1em;
+      height: 1em;
+      margin-right: 0.5em;
+      content: " ";
+      background: url(/assets/img/chevron-right.svg) no-repeat center center;
+      background-size: contain;
+      transition: transform 0.2s ease;
     }
+  }
+
+  .dh-label:hover,
+  .dh-toggler:checked ~ .dh-label {
+    opacity: 1;
+  }
+
+  .dh-toggler:checked ~ .dh-label::before {
+    transform: rotate(90deg);
   }
 
   .dh-content {
