@@ -1,0 +1,23 @@
+@import "sass";
+
+@mixin dh-icon($placement, $props) {
+  &::#{$placement} {
+    @include dh-sass-extract-props($props, (width, height));
+    display: inline-flex;
+    content: " ";
+
+    @if map_has_key($props, url) {
+      $url: map_get($props, url);
+      background: url(#{$url}) no-repeat center center;
+      background-size: contain;
+    }
+  }
+}
+
+@mixin dh-icon-after($props) {
+  @include dh-icon(after, $props);
+}
+
+@mixin dh-icon-before($props) {
+  @include dh-icon(before, $props);
+}
