@@ -13,14 +13,14 @@
     opacity: 0.5;
     font-weight: bold;
 
+    @include dh-icon-before((
+      width: 1em,
+      height: 1em,
+      url: "/assets/img/chevron-right.svg"
+    ));
+
     &::before {
-      display: inline-flex;
-      width: 1em;
-      height: 1em;
       margin-right: 0.5em;
-      content: " ";
-      background: url(/assets/img/chevron-right.svg) no-repeat center center;
-      background-size: contain;
       transition: transform 0.2s ease;
     }
   }
