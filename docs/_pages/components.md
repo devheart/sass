@@ -16,3 +16,10 @@ Switch `type="radio"` to `type="checkbox"` in order to allow multiple sections t
 
 ## Collapse
 {% include code_example.md file="collapse.md" %}
+
+---
+
+## Breakpoint helper
+Displays current breakpoint name and size trigger.
+
+{% include code_example.md file="breakpoint_helper.md" %}
